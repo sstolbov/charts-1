@@ -3,6 +3,7 @@
 ## Please, note that this will override the image parameters, including dependencies, configured to use the global value
 ## Current available global Docker image parameters: imageRegistry, imagePullSecrets and storageClass
 ##
+## Source global values file https://github.com/adeo/bigfish-wms--picking--deploy/blob/feat/pick-3224/kubernetes/persistence/rabbitmq_values.yaml
 
 ## @param global.imageRegistry Global Docker image registry
 ## @param global.imagePullSecrets Global Docker registry secret names as an array
@@ -485,7 +486,7 @@ extraVolumeMounts: []
 ##     emptyDir: {}
 ##
 extraVolumes: []
-## @param extraSecrets Optionally specify extra secrets to be created by the chart.
+## @param extra'Optionally specify extra secrets to be created by the chart.
 ## This can be useful when combined with load_definitions to automatically create the secret containing the definitions to be loaded.
 ## Example:
 ## extraSecrets:
